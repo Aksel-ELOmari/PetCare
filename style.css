@@ -135,12 +135,11 @@ a,
 {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 60rem;
-    width: 70%;
+    top: -85%;
+    left: 37%;
+    height: 960px;
+    width: 380px;
     rotate: 210deg;
-    translate: 60% -43%;
     z-index:-1;
     background: #c2983c75;
     border-radius:10rem 10rem 0 0 ;
@@ -192,6 +191,8 @@ a,
     }
 }
 @media screen and (max-width:425px) {
+    .hero-section .row{flex-direction: column;}
+    .second-hero-cover img{border-radius: 32px; margin-block: 1rem;}
     .t-header
     {
         flex-direction: column;
@@ -202,27 +203,19 @@ a,
 /* ? end styling the carousel section */
 
 /* ? start styling the team work section  */
-section.work-show
+.work-show
 {
-    width:-moz-fit-content;
-    width:fit-content;
-    background: var(--section-1-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    gap: 2rem;
+    width: 90%;
+    max-width: 100%;
+    /* overflow: hidden; */
 }
-@media screen and (max-width:550px) {
-    section.work-show
-    {
-        flex-direction: column;
-    }
-}
-section.work-show img
-{
-    border-radius: 30px;
-    width: 17rem;
-    height: 20rem;
+.work-show div{flex-grow: 1;}
+.work-show div img {border-radius: 30px;width: 100%;height: 400px;}
+@media screen and (max-width:500px){
+    .work-show{flex-direction: column;width: 100%;}
 }
 /* ? end styling the team work section  */
 
@@ -256,6 +249,7 @@ section.work-show img
     }
 }
 /* ? end styling the up comming section  */
+
 
 
 
